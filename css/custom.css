@@ -770,4 +770,14 @@ header {
     opacity: 1;
     font-weight: 500;
   }
+  .diagram {
+    margin-top: 40px !important;
+  }
+  .persona-grid img{
+    transition: all 0.4s;
+  }
+  .persona-grid img:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+  }
 
