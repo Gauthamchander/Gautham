@@ -306,6 +306,7 @@ header {
     color: black;
     padding: 10px 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    transition: height 0.3s ease, background-color 0.3s ease;
     padding: 0;
   }
   .scrolled {
@@ -430,12 +431,9 @@ header {
     border: 1px solid #ddd;
     border-top: none;
 }
-.card-title {
-    padding-bottom: 15px;
-}
+
 .case-study-card .card-text{
     font-size: 14px;
-    padding-bottom: 17px;
 }
 .case-study-card .card{
     border: none;
