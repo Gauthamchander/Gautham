@@ -717,13 +717,13 @@ header {
   .image-scroll {
     display: flex;
     width: max-content;
-    animation: scroll-horizontal 250s linear infinite;
+    animation: scroll-horizontal 400s linear infinite;
   }
 
   .image-scroll-container.mobile .image-scroll{
     margin-top: 50px;
     margin-bottom: 50px;
-    animation: scroll-horizontal 75s linear infinite;
+    animation: scroll-horizontal 175s linear infinite;
   }
   
   /* Keyframe for horizontal scrolling */
