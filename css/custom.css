@@ -6,7 +6,10 @@ html {
 *:after {
     box-sizing: inherit;
 }
-
+b{
+  color: #000000 !important;
+  opacity: 1 !important;
+}
 ul li {
     list-style-type: none;
 }
@@ -476,6 +479,8 @@ header {
 }
 .case-study-header-section h2 b{
     font-weight: 600;
+    opacity: 1 !important;
+    color: #000000 !important;
 }
 .case-study-header-section p{
     color: #AEC2CE;
@@ -633,6 +638,7 @@ header {
  }
  .takeaways-stakeholder p b{
     color: #000000;
+    opacity: 1 !important;
  }
  .user-Interview h1{
     font-size: 20px;
@@ -736,6 +742,16 @@ header {
     }
   }
 
+  .great-design {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    border-left: 7px solid #E0D7C5;
+    padding-left: 20px;
+    color: #000000 !important;
+    margin-bottom: 30px !important;
+    margin-top: 30px !important;
+    opacity: 1 !important;
+  }
 
 
 
