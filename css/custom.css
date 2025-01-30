@@ -7,8 +7,7 @@ html {
     box-sizing: inherit;
 }
 b{
-  color: #000000 !important;
-  opacity: 1 !important;
+  font-weight: 600;
 }
 ul li {
     list-style-type: none;
@@ -476,11 +475,6 @@ header {
     color: #fff;
     font-weight: 200;
     margin-bottom: 15px;
-}
-.case-study-header-section h2 b{
-    font-weight: 600;
-    opacity: 1 !important;
-    color: #000000 !important;
 }
 .case-study-header-section p{
     color: #AEC2CE;
