@@ -1,24 +1,22 @@
+const header = document.getElementById('sticky-header');
+const scrollContainer = document.querySelector('.image-scroll');
+const footerMenuList = document.getElementById('footer-menu-list');
 
-  const header = document.getElementById('sticky-header');
-  let lastScrollY = 0;
-    
-  window.addEventListener('scroll', () => {
-    const currentScrollY = window.scrollY;
-    // Check if the user has scrolled beyond the first fold (e.g., 150px)
-    if (window.scrollY > 200) {
-      header.classList.add('scrolled'); // Add the class for the new background
-    } else {
-      header.classList.remove('scrolled'); // Remove the class when scrolled back up
-    }
-    lastScrollY = currentScrollY;
-  });
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 200);
+});
 
-  const scrollContainer = document.querySelector('.image-scroll');
-  const images = scrollContainer.querySelectorAll('img');
-  
-  // Duplicate images to ensure seamless scrolling
-  images.forEach((image) => {
-    const clone = image.cloneNode(true);
-    scrollContainer.appendChild(clone);
-  });
-  
+scrollContainer.querySelectorAll('img').forEach(image => {
+  scrollContainer.appendChild(image.cloneNode(true));
+});
+
+[
+  { href: 'index.html', text: 'Home' },
+  { href: 'case-study.html', text: 'Case Study' },
+  { href: '', text: 'Testimonials' },
+  { href: '', text: 'About Me' }
+].forEach(item => {
+  const li = document.createElement('li');
+  li.innerHTML = `<a href="${item.href}">${item.text}</a>`;
+  footerMenuList.appendChild(li);
+});
