@@ -24,6 +24,10 @@ body {
     background-color: #EBEBEB;
 }
 
+.mar-top-25 {
+    margin-top: 25px;
+}
+
 .navbar  .navbar-brand {
     font-size: 14px;
     gap: 12px;
@@ -422,9 +426,6 @@ header {
 }
 .case-title {
     margin-bottom: 30px;
-}
-.case-study-card .card+.card{
-    margin-left: 20px;
 }
 .case-study-card .card-body{
     background-color: #FAFAFA;
